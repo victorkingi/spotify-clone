@@ -2,8 +2,8 @@
 
 This is a spotify equivalent UI with spotfiy api integrated, therefore, your log in is handled by spotify and on logging
 in, you are redirected to your discover weekly playlist. To view your playlist, just go to App.js file in src/ directory
-and in the useEffect() at spotify.getPlaylist('YOUR_DISCOVER_WEEKLY') replace YOUR_DISCOVER_WEEKLY with 
-![spotify discover week](http://url/to/img.png)
+and in the useEffect() at spotify.getPlaylist('YOUR_DISCOVER_WEEKLY') replace YOUR_DISCOVER_WEEKLY with the key found at
+open.spotify.com/playlist/... (link to your discover weekly playlist) the key look like this : 59i9dQGEVXcF4mK1GZKF3g
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
