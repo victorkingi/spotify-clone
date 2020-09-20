@@ -44,7 +44,7 @@ function App() {
              * playlist This is how the key looks like: '68w3rQZEGHcF4yK1GZKF3g'
              */
 
-            spotify.getPlaylist('37i9dQZEVXcF4yK1GZKF3g').then(response => {
+            spotify.getPlaylist('DISCOVER_WEEKLY_KEY').then(response => {
                 dispatch({
                     type: 'SET_DISCOVER_WEEKLY',
                     discover_weekly: response
