@@ -1,3 +1,10 @@
+## Spotify Clone
+
+This is a spotify equivalent UI with spotfiy api integrated, therefore, your log in is handled by spotify and on logging
+in, you are redirected to your discover weekly playlist. To view your playlist, just go to App.js file in src/ directory
+and in the useEffect() at spotify.getPlaylist('YOUR_DISCOVER_WEEKLY') replace YOUR_DISCOVER_WEEKLY with 
+![spotify discover week](http://url/to/img.png)
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
