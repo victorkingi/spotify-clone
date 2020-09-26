@@ -2,7 +2,7 @@
 
 Here is the deployed version : [myspotify](https://spotify-clone-38901.web.app/).
 This is a spotify equivalent UI with spotify api integrated using, therefore, your login is handled by spotify and on logging
-in, you are redirected to a dummy discover weekly playlist. Click on 'Your Top Artists' to view your top artists or you can choose one of the playlists you've created and you will be redirected to the respective [spotify](open.spotify.com) playlist. To view your discover weekly playlist, just go to App.js file in src/ directory
+in, you are redirected to a dummy discover weekly playlist. Click on 'Your Top Artists' to view your top artists or you can choose one of the playlists you've created and you will be redirected to the respective [spotify](https://open.spotify.com) playlist. To view your discover weekly playlist, just go to App.js file in src/ directory
 and in the useEffect() at spotify.getPlaylist('YOUR_DISCOVER_WEEKLY') replace the string with the key found at
 open.spotify.com/playlist/... (link to your discover weekly playlist) the key looks like this : '59i9dQGEVXcF4mK1GZKF3g'
 
