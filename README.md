@@ -1,10 +1,10 @@
-## Spotify Clone
+## Spotify React Clone
 
-Here is the deployed version : [myspotify](https://spotify-clone-38901.web.app/)
-This is a spotify equivalent UI with spotfiy api integrated, therefore, your log in is handled by spotify and on logging
+Here is the deployed version : [myspotify](https://spotify-clone-38901.web.app/).
+This is a spotify equivalent UI with spotify api integrated using, therefore, your login is handled by spotify and on logging
 in, you are redirected to a dummy discover weekly playlist. Click on 'Your Top Artists' to view your top artists. To view your discover weekly playlist, just go to App.js file in src/ directory
 and in the useEffect() at spotify.getPlaylist('YOUR_DISCOVER_WEEKLY') replace the string with the key found at
-open.spotify.com/playlist/... (link to your discover weekly playlist) the key looks like this : 59i9dQGEVXcF4mK1GZKF3g
+open.spotify.com/playlist/... (link to your discover weekly playlist) the key looks like this : '59i9dQGEVXcF4mK1GZKF3g'
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
