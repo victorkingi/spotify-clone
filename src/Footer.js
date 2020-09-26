@@ -19,6 +19,13 @@ function Footer() {
         track = discover_weekly.tracks.items[Math.floor(Math.random() * (discover_weekly?.tracks?.items.length - 1))].track;
     }
 
+    const playSong = (e) => {
+        e.preventDefault();
+
+        window.location.href = track.external_urls.spotify;
+
+    }
+
     if (track) {
         return (
             <div className="footer">
@@ -35,7 +42,7 @@ function Footer() {
                 <div className="footer_center">
                     <ShuffleIcon className="footer_green"/>
                     <SkipPreviousIcon className="footer_icon"/>
-                    <PlayCircleOutlineIcon fontSize="large" className="footer_icon"/>
+                    <PlayCircleOutlineIcon onClick={playSong} fontSize="large" className="footer_icon"/>
                     <SkipNextIcon fontSize="large" className="footer_icon"/>
                     <RepeatIcon className="footer_green"/>
                 </div>

@@ -28,23 +28,35 @@ function App() {
 
                 dispatch({
                     type: 'SET_USER',
-                    user: user
+                    user
                 })
             })
 
             spotify.getUserPlaylists().then((playlists) => {
                 dispatch({
                     type: 'SET_PLAYLISTS',
-                    playlists: playlists
+                    playlists
                 })
             });
 
-            /**TODO For Developer: replace 'YOUR_DISCOVER_WEEKLY_KEY' with the actual key found on
+            spotify.getMyTopArtists().then((response) =>
+                dispatch({
+                    type: "SET_TOP_ARTISTS",
+                    top_artists: response,
+                })
+            );
+
+            dispatch({
+                type: "SET_SPOTIFY",
+                spotify: spotify,
+            });
+
+            /**TODO For Developer: replace '37i9dQZEVXcF4yK1GZKF3g' with the actual key found on
              * https://open.spotify.com/playlist/DISCOVER_WEEKLY_KEY when you open your discoverWeekly
-             * playlist This is how the key looks like: '68w3rQZEGHcF4yK1GZKF3g'
+             * playlist so as to view your own discover weekly instead of the dummy one
              */
 
-            spotify.getPlaylist('DISCOVER_WEEKLY_KEY').then(response => {
+            spotify.getPlaylist('37i9dQZEVXcF4yK1GZKF3g').then(response => {
                 dispatch({
                     type: 'SET_DISCOVER_WEEKLY',
                     discover_weekly: response
@@ -55,17 +67,10 @@ function App() {
 
     }, [token, dispatch]);
 
-    console.log(token)
-
   return (
     <div className="app">
-        {
-            token ? (
-                <Player spotify={spotify} />
-            ) : (
-                <Login />
-            )
-        }
+        {!token && <Login />}
+        {token && <Player spotify={spotify} />}
     </div>
   );
 }

@@ -5,15 +5,17 @@
     background-color: black;
 }
 
-.login > img {
-    width: 100%;
-}
-
 .login > a {
     padding: 20px;
     border-radius: 99px;
     background-color: #1db954;
-    font-weight: 800;
+    font-weight: 700;
     color: white;
     text-decoration: none;
+}
+
+@media (max-width: 900px) {
+    .login img {
+        width: 100%;
+    }
 }
