@@ -1,3 +1,9 @@
 .player_body {
     display: flex;
 }
+
+@media (max-width: 900px) {
+    .player_body {
+        width: 100%;
+    }
+}
